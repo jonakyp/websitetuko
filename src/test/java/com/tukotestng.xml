@@ -4,7 +4,7 @@
     <listeners>
         <listener class-name="com.tuko.TestListener"/>
     </listeners>
-    <test verbose="2" preserve-order="true" name="/home/jb/IdeaProjects/websitetuko repo /jonakyp/tukowebsitetask.git">
+    <test verbose="2" name="/home/jb/IdeaProjects/websitetuko repo /jonakyp/websitetuko.git">
         <classes>
             <class name="com.tuko.EducationTest">
                 <methods>
