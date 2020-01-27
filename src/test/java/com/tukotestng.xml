@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="com.tuko.TestListener"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="/home/jb/IdeaProjects/websitetuko repo /jonakyp/tukowebsitetask.git">
+        <classes>
+            <class name="com.tuko.EducationTest">
+                <methods>
+                    <include name="testHomepage"/>
+                    <include name="testLoadEducationPage"/>
+                    <include name="testLoadStroyLinks"/>
+                    <include name="testClickFacebookLink"/>
+                    <include name="testFacbooklogin"/>
+                    <include name="testpostNewsonFb"/>
+                    <include name="testConfirmNewsPost"/>
+                </methods>
+            </class>
+            <class name="com.tuko.HomepageTest">
+                <methods>
+                    <include name="testHomepage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
