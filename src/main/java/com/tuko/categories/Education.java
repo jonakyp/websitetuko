@@ -59,7 +59,7 @@ public class Education {
 
     public void confirmNewsPost() throws IOException, ParseException {
         fb.fbHomepage();
-        fb.newsFeedOption();
+        fb.newsFeedVerify();
 
     }
 

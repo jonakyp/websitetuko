@@ -3,6 +3,7 @@ package com.tuko;
 import common.AssertionHelpers;
 import common.CommonInteractions;
 import common.Readjson;
+import common.PublicString;
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -31,8 +32,8 @@ public class Homepage {
         driver.get("https://www.tuko.co.ke/");
         common.elementPresent(tuko_log_img);
         common.elementPresent(footer_adv_anchor);
-        String website_title = driver.getTitle();
-        AssertionHelpers.verifyText(website_title,Readjson.readjsonassert("tukotitle"));
+        PublicString.homepagewebtitle = driver.getTitle();
+        AssertionHelpers.verifyText(PublicString.homepagewebtitle,Readjson.readjsonassert("tukotitle"));
 
     }
 

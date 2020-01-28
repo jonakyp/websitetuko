@@ -17,8 +17,7 @@ public class TestListener implements ITestListener {
     private String testResult;
 
     @Attachment(value = "{0}", type = "text/plain")
-    private static String saveTextLog(String message) {
-        return message;
+    private static void saveTextLog(String message) {
     }
 //
 //    @Attachment(value = "{0}", type = "text/html")
@@ -80,6 +79,8 @@ public class TestListener implements ITestListener {
             saveScreenshotPNG(driver);
         }
         saveTextLog(getTestResult() + "****KO Screenshot taken!!****");
+        assert driver != null;
+        driver.quit();
     }
 
 

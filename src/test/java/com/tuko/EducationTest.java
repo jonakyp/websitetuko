@@ -75,7 +75,7 @@ public class EducationTest extends CapabilitiesTest {
     }
     @Test(priority = 7)
     public void testConfirmNewsPost() throws IOException {
-        Education education = new Education(driver);;
+        Education education = new Education(driver);
         try {
             education.confirmNewsPost();
         } catch (ParseException e) {
