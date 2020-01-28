@@ -23,6 +23,7 @@ public class CategoriesCommonFunctions {
     By share_article = By.xpath("//div[contains(@class,'l-article__share js-article-share l-article__share--top-fixed')]");
     By facebook_link_btn = By.cssSelector("a.c-article-share-item:nth-child(1)");
     By fb_username_field = By.id("email");
+    By pop_up = By.id("onesignal-popover-dialog");
 
 
     public CategoriesCommonFunctions(WebDriver driver) {
@@ -53,13 +54,14 @@ public class CategoriesCommonFunctions {
         actions.moveToElement(elem).perform();
         actions.click(elem).perform();
         common.elementPresent(share_article);
+        common.elementPresent(pop_up);
 //        driver.manage().timeouts().implicitlyWait(20, SECONDS);
         PublicString.storylinktitle = driver.getTitle();
         System.out.println("story title is = " + PublicString.storylinktitle);
     }
 
     public void selectFacebooklink() {
-//        common.elementPresent(share_article);
+
         common.click(facebook_link_btn);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
