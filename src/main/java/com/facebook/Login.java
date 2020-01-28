@@ -11,6 +11,7 @@ import org.openqa.selenium.WebDriver;
 
 import java.io.IOException;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 public class Login {
 
@@ -48,6 +49,7 @@ public class Login {
 
     public void fbHomepage() throws IOException, ParseException {
         driver.get(Readjson.readjsonconfig("facebook", "URI"));
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         System.out.println(driver.getTitle());
         common.elementPresent(fb_logo);
 //        String winHandleBefore = driver.getWindowHandle();

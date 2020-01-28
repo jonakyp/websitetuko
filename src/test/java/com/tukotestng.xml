@@ -6,6 +6,11 @@
     </listeners>
     <test verbose="2" name="/home/jb/IdeaProjects/websitetuko repo /jonakyp/websitetuko.git">
         <classes>
+            <class name="com.tuko.HomepageTest">
+                <methods>
+                    <include name="testHomepage"/>
+                </methods>
+            </class>
             <class name="com.tuko.EducationTest">
                 <methods>
                     <include name="testHomepage"/>
@@ -15,11 +20,6 @@
                     <include name="testFacbooklogin"/>
                     <include name="testpostNewsonFb"/>
                     <include name="testConfirmNewsPost"/>
-                </methods>
-            </class>
-            <class name="com.tuko.HomepageTest">
-                <methods>
-                    <include name="testHomepage"/>
                 </methods>
             </class>
         </classes>

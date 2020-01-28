@@ -43,18 +43,24 @@ public class EducationTest extends CapabilitiesTest {
     }
 
     @Test(priority = 3)
+    @Story("Story Name: Education Page Tests")
+    @Description("Test Description: Select an Education Story and click on it")
     public void testLoadStroyLinks() {
         Education education = new Education(driver);
         education.loadStoryLinks();
     }
 
     @Test(priority = 4)
+    @Story("Story Name: Education Page Tests")
+    @Description("Test Description: User Clicks on Facebook Share icon")
     public void testClickFacebookLink() {
         Education education = new Education(driver);
         education.clickFacebookLink();
     }
 
     @Test(priority = 5)
+    @Story("Story Name: Education Page Tests")
+    @Description("Test Description: User logs in on facebook share window")
     public void testFacbooklogin() throws IOException {
         Education education = new Education(driver);
         try {
@@ -65,6 +71,8 @@ public class EducationTest extends CapabilitiesTest {
     }
 
     @Test(priority = 6)
+    @Story("Story Name: Education Page Tests")
+    @Description("Test Description: User posts the Education story on FB")
     public void testpostNewsonFb() throws IOException {
         Education education = new Education(driver);
         try {
@@ -74,6 +82,8 @@ public class EducationTest extends CapabilitiesTest {
         }
     }
     @Test(priority = 7)
+    @Story("Story Name: Education Page Tests")
+    @Description("Test Description: User Confirms story shared on FB is the right one")
     public void testConfirmNewsPost() throws IOException {
         Education education = new Education(driver);
         try {

@@ -11,6 +11,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import java.io.IOException;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 
 public class CategoriesCommonFunctions {
@@ -60,6 +61,7 @@ public class CategoriesCommonFunctions {
     public void selectFacebooklink() {
 //        common.elementPresent(share_article);
         common.click(facebook_link_btn);
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
         for(String winHandle : driver.getWindowHandles())
         {

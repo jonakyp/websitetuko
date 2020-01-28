@@ -4,6 +4,7 @@ common/AssertionHelpers.class
 com/facebook/Login.class
 common/WaitHelpers.class
 com/tuko/Homepage.class
+common/PublicString.class
 com/tuko/categories/CategoriesCommonFunctions.class
 com/tuko/categories/Sports.class
 common/Readjson.class
